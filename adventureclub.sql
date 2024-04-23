@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2024 at 10:30 AM
+-- Generation Time: Apr 23, 2024 at 03:18 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -89,7 +89,9 @@ INSERT INTO `user` (`id`, `email`, `roles`, `password`, `fname`, `master`) VALUE
 (1, 'emma@gmail.com', '[\"ROLE_ADMIN\"]', '$2y$13$xT6vEfIfjArHJHfSsUrCRepJuF2ZikYqSEL4Kxvf6wqcefMi9P2yi', 'Emma', NULL),
 (2, 'mark@gmail.com', '[\"ROLE_MEMBER\"]', '$2y$13$jTR1X3nRt29xauIVroanU.nG1BsR9IfN7uv2Gw2TnH1pYboTyVioK', 'Mark', 'Symfony'),
 (3, 'lisa@gmail.com', '[\"ROLE_MEMBER\"]', '$2y$13$iSp8XHkw8yXP3zLurf9CO.ZJb.pSCt/eBZMhMsmsU/jJmpZ3Xs/Li', 'Lisa', 'front-end'),
-(4, 'alex@gmail.com', '[\"ROLE_MEMBER\"]', '$2y$13$iSp8XHkw8yXP3zLurf9CO.ZJb.pSCt/eBZMhMsmsU/jJmpZ3Xs/Li', 'Alex', 'crud');
+(4, 'alex@gmail.com', '[\"ROLE_MEMBER\"]', '$2y$13$iSp8XHkw8yXP3zLurf9CO.ZJb.pSCt/eBZMhMsmsU/jJmpZ3Xs/Li', 'Alex', 'crud'),
+(5, 'appel@mint.nl', '[\"ROLE_ADMIN\"]', '$2y$13$LkO/PUPkueCoxD8.YWdGPOr8gBjJCIvIb3lpCV7KvL/elH4YfxOUi', 'appelmintpuur', NULL),
+(6, '123456@gmail.com', '[\"ROLE_ADMIN\"]', '$2y$13$wADH9b38QvBta7jNbvu/6uOa/ONpkjZ6t.euuf4nBGewIm9XSVY1W', '123456', NULL);
 
 --
 -- Indexes for dumped tables
@@ -131,7 +133,7 @@ ALTER TABLE `messenger_messages`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
